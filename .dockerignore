@@ -1,0 +1,48 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Documentation
+README.md
+API_SETUP.md
+postman_collection.json
+
+# Environment
+.env
+.env.example
+
+# IDE
+.vscode
+.idea
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+/node_modules
+/vendor
+
+# Testing
+/tests
+/phpunit.xml
+/.phpunit.result.cache
+
+# Cache
+/bootstrap/cache/*.php
+/storage/cache/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Build
+/public/hot
+/public/build

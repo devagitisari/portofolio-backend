@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: laravel-backend
+    env: docker
+    plan: free
+    region: singapore
+    
+    # Environment variables (set these in Render dashboard)
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        generateValue: true
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        value: your-supabase-project.supabase.co
+      - key: DB_PORT
+        value: 5432
+      - key: DB_DATABASE
+        value: postgres
+      - key: DB_USERNAME
+        value: postgres
+      - key: DB_PASSWORD
+        value: your-supabase-db-password
